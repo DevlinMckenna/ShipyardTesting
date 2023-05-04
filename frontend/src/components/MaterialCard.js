@@ -25,8 +25,10 @@ function MaterialCard(props) {
       <p>Material-UI provides a variety of UI components to render data.</p>
       <List>
         {seasons.map((season) => (
-          <Chip key={season} label={season} />
-        ))}
+         <ListItem button>
+      <ListItemText primary={season} />
+     </ListItem>
+      ))} 
       </List>
       <p>
         To change the <b>chips</b> above to <b>list items</b>, open{' '}
